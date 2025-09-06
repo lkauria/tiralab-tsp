@@ -1,5 +1,7 @@
 # Määrittelydokumentti (luonnos)
 
+Opinto-ohjelmani on tietojenkäsittelytieteen kandiohjelma.
+
 Kurssilla koodattava ohjelmointikieli tulee olemaan python. Pystyn vertaisarvioimaan myös javascriptilla/typescriptilla ja javalla koodattuja projeketja. 
 
 Tulen kurssin projektissa toteuttamaan kauppamatkustajan ongelman Christofidesin algoritmilla ja visualisoimaan algoritmin toteutuksen valmiilla visualisointikirjastolla. 
