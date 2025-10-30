@@ -1,5 +1,7 @@
 # Määrittelydokumentti (luonnos)
 
+Jatkan periodissa 1 (vuosi 2025) kesken jäänyttä työtä.
+
 Opinto-ohjelmani on tietojenkäsittelytieteen kandiohjelma.
 
 Kurssilla koodattava ohjelmointikieli tulee olemaan python. Pystyn vertaisarvioimaan myös javascriptilla/typescriptilla ja javalla koodattuja projeketja. 
