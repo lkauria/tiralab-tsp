@@ -1,6 +1,6 @@
 # Määrittelydokumentti (luonnos)
 
-Jatkan periodissa 1 (vuosi 2025) kesken jäänyttä työtä.
+Jatkan periodeissa 1 ja 2 (vuosi 2025) kesken jäänyttä työtä.
 
 Opinto-ohjelmani on tietojenkäsittelytieteen kandiohjelma.
 
