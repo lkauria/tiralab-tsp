@@ -6,13 +6,15 @@ Sain tehtyä tällä viikolla paljon. Luin MST:sta ja Primin algoritmista, kusta
 
 Sain tehtyä hyvin pitkälle kustannusmatriisin ja MST:n muodostamisen. Testitiedostot puuttuvat vielä mst.py:lle ja graph.py:lle. Haluan alussa painottaa visuaalista testaamista matlibplotin avulla.
 
+Jokaisen algoritmin osan oppimisessa ja koodin parantamisessa olen hyödyntänyt Claudea.
+
 ## Miten ohjelma on edistynyt?
 
 Ohjelma on edistynyt todella hyvin. Sanoisin, että 25 % ohjelmasta on valmista.
 
 ## Mitä opin tällä viikolla / tänään?
 
-Olen oppinut, kuinka Primin algoritmin avulla luodaan MST.
+Olen oppinut, kuinka Primin algoritmin avulla luodaan MST. Olen oppinut hyödyntämään Claudea koodin rakentamisessa.
 
 ## Mikä jäi epäselväksi tai tuottanut vaikeuksia?
 
