@@ -16,7 +16,7 @@ Tulen kurssin projektissa toteuttamaan kauppamatkustajan ongelman Christofidesin
 
 Ohjelma tulee saamaan syötteenä x,y -koordinaattipisteet, joiden välillä on kustannus (paino) eli käytännössä pisteiden välinen pituus kaksiulotteisella tasolla.
 
-Ohjelma muodostaa raakakoordinaateista ensin kustannusmatriisin, jota pienin virittävä puu (MST) käyttää jälleen syötteenään listana. Tätä listaa Christofidesin algoritmi ... (jatkuu)
+Ohjelma laskee ensin koordinaateista kustannusmatriisin. Matriisia käytetään syötteenä pienimmän virittävän puun (MST) muodostamisessa. MST:tä hyödyntäen Christofidesin algoritmi ... (kesken)
 
 ## Aika- ja tilavaativuus
 
