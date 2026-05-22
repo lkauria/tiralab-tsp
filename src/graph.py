@@ -18,6 +18,7 @@ def build_distance_matrix(nodes):
 
 
 def _print_distance_matrix(dist, n):
+    # For testing purposes (delete this later)
     print("Etäisyysmatriisi:")
     header = "     " + "  ".join(f"{j:5}" for j in range(n))
     print(header)
