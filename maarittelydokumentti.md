@@ -42,14 +42,3 @@ Harjoitustyön ydin on kirjoittaa kauppamatkustajan ongelmaan (eng. Travelling s
 Kauppamatkustajan ongelmassa pyritään löytämään mahdollisimman kustannustehokkain reitti kaikkien annettujen pisteiden välille niin, että jokaisessa pisteessä käydään vain kerran ja että ensimmäiseen pisteeseen palataan viimeisestä pisteestä. Tässä tapauksessa kustannuksena kahden pisteen välillä (paino) käytetään matkaa, vaikka se voisi olla myös esim. aika tai taloudellinen kustannus.
 
 Pisteet ja graafit visualisoidaan matplotlibilla, jotta testaaminen onnistuu myös visuaalisesti yksikkötestien ja muiden testien lisäksi.
-
-Then the algorithm can be described in pseudocode as follows.[1]
-
-Seuraavassa pseudokoodilla algoritmi (kesken):
-1. Luodaan pienin virittävä puu (eng. minimum spanning tree, MST) T
-2. Etsitääm kaikki MST:n solmut, joilla on pariton määrä yhteyksiä (joukko O)
-3. Paritetaan (matching) joukon O solmut. Ne ovat "yksinäisiä" ja niillä on pariton määrä yhteyksiä. Yhdistetään ne pareiksi niin, että yhdistävien reittien yhteispituus on mahdollisimman lyhyt.
-4. -7.?
-
-PITÄISIKÖ TÄMÄ TUODA ALGORITMIN KOHDAKSI 0. 
-Ensin on tuotettava kustannusmatriisi, jota pienin virittävä puu (MST) käyttää pohjanaan. MST muodostetaan hyödyntäen Primin algoritmia. Kun MST-lista on valmis ... (kesken)
