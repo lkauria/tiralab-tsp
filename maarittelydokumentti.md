@@ -30,17 +30,26 @@ Nämä kannattaa katsoa wikipediasta ja varmistaa, että ymmärrätte oman algor
 
 ## Lähteet
 
-MST:tä ja Primiä varten luettu:
-Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). Introduction to algorithms / Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein. (Fourth edition.). The MIT Press.
+Christofidesin koko algoritmin hahmottamiseen on käytetty muun muassa Wikipediaa: https://en.wikipedia.org/wiki/Christofides_algorithm
 
-Christofidesia varten ... (kesken)
+Tarkemmin MST:tä ja Primiä varten on luettu:
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). Introduction to algorithms / Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein. (Fourth edition.). The MIT Press.
 
 ## Harjoitustyön ydin
 
-Harjoitustyön ydin on kirjoittaa ikiaikaiseen kauppamatkustajan pulmaan algoritmi, joka on nyt valittu Christofidesin 1,5-approksimaatioalgoritmi. Tämä tarkoittaa, että Christofidesin algoritmi takaa enintään 1,5-kertaisen tuloksen.
+Harjoitustyön ydin on kirjoittaa kauppamatkustajan ongelmaan (eng. Travelling salesman problem, TSP) algoritmi, joka on nyt valittu Christofidesin 1,5-approksimaatioalgoritmi. Tämä tarkoittaa, että Christofidesin algoritmi takaa enintään 1,5-kertaisen tuloksen globaaliin optimiin verraten.
 
-Kauppamatkustajan ongelmassa pyritään löytämään mahdollisimman kustannustehokkain reitti kaikkien annettujen pisteiden välille niin, että jokaisessa pisteessä käydään vain kerran ja että ensimmäiseen pisteeseen palataan. Tässä tapauksessa kustannuksena kahden pisteen välillä (paino) käytetään matkaa, vaikka se voisi olla myös esim. aika tai taloudellinen kustannus.
+Kauppamatkustajan ongelmassa pyritään löytämään mahdollisimman kustannustehokkain reitti kaikkien annettujen pisteiden välille niin, että jokaisessa pisteessä käydään vain kerran ja että ensimmäiseen pisteeseen palataan viimeisestä pisteestä. Tässä tapauksessa kustannuksena kahden pisteen välillä (paino) käytetään matkaa, vaikka se voisi olla myös esim. aika tai taloudellinen kustannus.
 
-Pisteet ja graafit (MST ja lopullinen reitti) visualisoidaan matplotlibilla, jotta testaaminen onnistuu myös visuaalisesti.
+Pisteet ja graafit visualisoidaan matplotlibilla, jotta testaaminen onnistuu myös visuaalisesti yksikkötestien ja muiden testien lisäksi.
 
+Then the algorithm can be described in pseudocode as follows.[1]
+
+Seuraavassa pseudokoodilla algoritmi (kesken):
+1. Luodaan pienin virittävä puu (eng. minimum spanning tree, MST) T
+2. Etsitääm kaikki MST:n solmut, joilla on pariton määrä yhteyksiä (joukko O)
+3. Paritetaan (matching) joukon O solmut. Ne ovat "yksinäisiä" ja niillä on pariton määrä yhteyksiä. Yhdistetään ne pareiksi niin, että yhdistävien reittien yhteispituus on mahdollisimman lyhyt.
+4. -7.?
+
+PITÄISIKÖ TÄMÄ TUODA ALGORITMIN KOHDAKSI 0. 
 Ensin on tuotettava kustannusmatriisi, jota pienin virittävä puu (MST) käyttää pohjanaan. MST muodostetaan hyödyntäen Primin algoritmia. Kun MST-lista on valmis ... (kesken)
