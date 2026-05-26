@@ -2,7 +2,7 @@
 
 ## Mitä olen tehnyt tällä viikolla?
 
-placeholder
+Olen päivittänyt dokumentaatiota määrittelyn, testauksen ja toteutuksen osalta. 
 
 ## Miten ohjelma on edistynyt?
 
