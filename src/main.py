@@ -1,3 +1,4 @@
+"""Christofides approximation algorithm"""
 from graph import build_distance_matrix
 from mst import prim_mst
 from visualize import draw, mst_edges

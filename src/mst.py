@@ -1,3 +1,6 @@
+"""Minimum spanning tree using Prim's algorithm."""
+
+
 def prim_mst(dist):
     """
     Prim's algorithm for minimum spanning tree.
