@@ -6,27 +6,23 @@ Opinto-ohjelmani on tietojenkäsittelytieteen kandiohjelma.
 
 ## Ohjelmointikieli
 
-Kurssilla koodattava ohjelmointikieli on python. Pystyn vertaisarvioimaan myös javascriptilla/typescriptilla ja javalla koodattuja projeketja.
+Ohjelmointikieli on python. Vertaisarvioinnissa myös javascript/typescript, react ja java onnistuvat.
 
 ## Algoritmi
 
-Tulen kurssin projektissa toteuttamaan kauppamatkustajan ongelman Christofidesin aproksimaatioalgoritmilla ja visualisoimaan algoritmin toteutuksen valmiilla visualisointikirjastolla, matplotlibilla.
+Projektissa toteutetaan kauppamatkustajan ongelman ratkaiseva Christofidesin aproksimaatioalgoritmi ja visualisoidaan algoritmin toteutus valmiilla visualisointikirjastolla, matplotlibilla.
 
 ## Syötteet
 
 Ohjelma tulee saamaan syötteenä x,y -koordinaattipisteet, joiden välillä on kustannus (paino) eli käytännössä pisteiden välinen pituus kaksiulotteisella tasolla.
 
-Ohjelma laskee ensin koordinaateista kustannusmatriisin. Matriisia käytetään syötteenä pienimmän virittävän puun (MST) muodostamisessa. MST:tä hyödyntäen Christofidesin algoritmi ... (kesken)
+Ohjelma laskee ensin koordinaateista kustannusmatriisin. Matriisia käytetään syötteenä pienimmän virittävän puun (MST) muodostamisessa ja niin edelleen. Algoritmin tarkempi avaus on toteutusdokumentaatiossa.
 
 ## Aika- ja tilavaativuus
 
 Koska kauppamatkustajan ongelma on NP-kova-ongelma, toteutus isommalle sijaintiryppäälle tehdään approksimaatioalgoritmina tai heuristisena algoritmina. Tässä on valittu approksimaatioalgoritmi toteutukseen.
 
-Christofidesin algoritmin aika- ja tilavaatimuus ... (kesken)
-
-Ohjeistus vielä alla:
-"Käytä aika ja tilavaatimuuksia apuvälineenä ymmärtääksenne, miten työhön kannattaa asennoitua.
-Nämä kannattaa katsoa wikipediasta ja varmistaa, että ymmärrätte oman algoritmin kohdalla mistä ne tulevat. Miksi algoritmisi tarvitsee sen verran aikaa?"
+Christofidesin algoritmin aika- ja tilavaatimuus: Algoritmin pullonkaula on täydellisen parituksen steppi, joka on O(n^3). Approksimaatioalgoritmilla pystytään käsittelemään kymmeniä tuhansia sijaintipisteitä, kun eksakti TSP tämän hetken laskentatehoilla (vuosi 2026) pääsee muutaman kymmenen sijantipisteen ratkaisuun.
 
 ## Lähteet
 
