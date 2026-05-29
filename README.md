@@ -1,1 +1,32 @@
 # tiralab-tsp
+
+Christofidesin approksimaatioalgoritmin toteutus kauppamatkustajan ongelmaan (TSP).
+
+## Vaatimukset
+
+- Python 3.8+
+- matplotlib
+
+## Asennus ja käynnistys
+
+```bash
+# Kloonaa repositorio
+git clone https://github.com/lkauria/tiralab-tsp.git
+cd tiralab-tsp
+
+# Luo virtuaaliympäristö ja aktivoi se
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Asenna riippuvuudet
+pip install matplotlib pylint
+
+# Aja ohjelma
+python src/main.py
+```
+
+## Koodin laadun tarkistus
+
+```bash
+pylint src/
+```

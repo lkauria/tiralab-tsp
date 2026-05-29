@@ -10,6 +10,7 @@ def euclidean_distance(p1, p2):
 def build_distance_matrix(nodes):
     """Build a distance matrix from a list of (x, y) coordinates."""
     n = len(nodes)
+    print(f"Rakennetaan etäisyysmatriisi {n} solmulle.")
     dist = [[0.0] * n for _ in range(n)]
     for i in range(n):
         for j in range(n):
