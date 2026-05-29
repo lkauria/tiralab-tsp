@@ -26,15 +26,15 @@ Christofidesin algoritmin aika- ja tilavaatimuus: Algoritmin pullonkaula on täy
 
 ## Lähteet
 
-Yleiskuvaa Christofidesin algoritmista muun muassa Wikipediassa: https://en.wikipedia.org/wiki/Christofides_algorithm .
+Christofidesin koko algoritmin hahmottamiseen on käytetty muun muassa Wikipediaa: https://en.wikipedia.org/wiki/Christofides_algorithm
 
-MST:tä ja Primiä varten luettu lukua 23:
+Tarkemmin MST:tä ja Primiä varten on luettu:
 Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). Introduction to algorithms / Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein. (Fourth edition.). The MIT Press.
 
 ## Harjoitustyön ydin
 
-Harjoitustyön ydin on kirjoittaa kauppamatkustajan pulmaan algoritmi, joka on nyt valittu Christofidesin 1,5-approksimaatioalgoritmi. Tämä tarkoittaa, että Christofidesin algoritmi takaa enintään 1,5-kertaisen tuloksen globaaliin optimiin verrattuna.
+Harjoitustyön ydin on kirjoittaa kauppamatkustajan ongelmaan (eng. Travelling salesman problem, TSP) algoritmi, joka on nyt valittu Christofidesin 1,5-approksimaatioalgoritmi. Tämä tarkoittaa, että Christofidesin algoritmi takaa enintään 1,5-kertaisen tuloksen globaaliin optimiin verraten.
 
-Kauppamatkustajan ongelmassa pyritään löytämään mahdollisimman kustannustehokkain reitti kaikkien annettujen pisteiden välille niin, että jokaisessa pisteessä käydään vain kerran ja että ensimmäiseen pisteeseen palataan viimeisestä. Tässä tapauksessa kustannuksena kahden pisteen välillä (paino) käytetään matkaa, vaikka se voisi olla myös esim. aika tai taloudellinen kustannus.
+Kauppamatkustajan ongelmassa pyritään löytämään mahdollisimman kustannustehokkain reitti kaikkien annettujen pisteiden välille niin, että jokaisessa pisteessä käydään vain kerran ja että ensimmäiseen pisteeseen palataan viimeisestä pisteestä. Tässä tapauksessa kustannuksena kahden pisteen välillä (paino) käytetään matkaa, vaikka se voisi olla myös esim. aika tai taloudellinen kustannus.
 
-Pisteet ja graafit visualisoidaan matplotlibilla, jotta testaaminen onnistuu myös visuaalisesti.
+Pisteet ja graafit visualisoidaan matplotlibilla, jotta testaaminen onnistuu myös visuaalisesti yksikkötestien ja muiden testien lisäksi.
