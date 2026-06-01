@@ -25,6 +25,12 @@ pip install matplotlib pylint
 python src/main.py
 ```
 
+## Testien ajo
+
+```bash
+python -m pytest tests/ -v
+```
+
 ## Koodin laadun tarkistus
 
 ```bash
