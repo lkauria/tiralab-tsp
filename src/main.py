@@ -1,6 +1,7 @@
 """Christofides approximation algorithm"""
 from graph import build_distance_matrix
 from mst import prim_mst
+from matching import odd_degree_vertices, greedy_matching
 from visualize import draw, mst_edges
 
 # Example nodes as x,y-coordinates
@@ -14,6 +15,11 @@ nodes = [
 dist = build_distance_matrix(nodes)
 mst = prim_mst(dist)
 
-# Let's draw nodes and then MST based on distance matrix.
+odd = odd_degree_vertices(mst)
+matching = greedy_matching(odd, dist)
+print("\nPariton-asteiset solmut:", odd)
+print("Paritus:", matching)
+
 draw(nodes, title="Solmut")
 draw(nodes, edges=mst_edges(mst), title="Minimivirityspuu (MST)")
+draw(nodes, edges=mst_edges(mst) + matching, title="MST + paritus")
