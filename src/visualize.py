@@ -2,12 +2,13 @@
 import matplotlib.pyplot as plt
 
 
-def draw(nodes, edges=None, title="TSP", node_color="steelblue", edge_color="gray"):
+def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray"):
     """
     Draw nodes and optional edges.
 
     nodes: list of (x, y) tuples
     edges: list of (i, j) index pairs to draw as lines
+    highlight_edges: list of (i, j) pairs drawn in red (e.g. matching edges)
     """
     _, ax = plt.subplots(figsize=(7, 7))
     ax.set_title(title)
@@ -18,6 +19,12 @@ def draw(nodes, edges=None, title="TSP", node_color="steelblue", edge_color="gra
             x_vals = [nodes[i][0], nodes[j][0]]
             y_vals = [nodes[i][1], nodes[j][1]]
             ax.plot(x_vals, y_vals, color=edge_color, linewidth=1.5, zorder=1)
+
+    if highlight_edges:
+        for i, j in highlight_edges:
+            x_vals = [nodes[i][0], nodes[j][0]]
+            y_vals = [nodes[i][1], nodes[j][1]]
+            ax.plot(x_vals, y_vals, color="crimson", linewidth=2, linestyle="--", zorder=1)
 
     xs = [n[0] for n in nodes]
     ys = [n[1] for n in nodes]
