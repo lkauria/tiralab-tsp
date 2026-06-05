@@ -22,7 +22,7 @@ Ohjelma laskee ensin koordinaateista kustannusmatriisin. Matriisia käytetään 
 
 Koska kauppamatkustajan ongelma on NP-kova-ongelma, toteutus isommalle sijaintiryppäälle tehdään approksimaatioalgoritmina tai heuristisena algoritmina. Tässä on valittu approksimaatioalgoritmi toteutukseen.
 
-Christofidesin algoritmin aika- ja tilavaatimuus: Algoritmin pullonkaula on täydellisen parituksen steppi, joka on O(n^3). Approksimaatioalgoritmilla pystytään käsittelemään kymmeniä tuhansia sijaintipisteitä, kun eksakti TSP tämän hetken laskentatehoilla (vuosi 2026) pääsee muutaman kymmenen sijantipisteen ratkaisuun.
+Christofidesin algoritmin aika- ja tilavaatimuus: Algoritmin pullonkaula on etäisyysmatriisi ja Primin algoritmi, molemmat O(n²). Täydellinen paritus olisi optimaalisena O(n³) (Edmondin blossom-algoritmi), mutta tässä toteutuksessa käytetään ahnetta paritusta joka on O(n²). Koko algoritmin aikavaativuus on siis O(n²). Approksimaatioalgoritmilla pystytään käsittelemään kymmeniä tuhansia sijaintipisteitä, kun eksakti TSP tämän hetken laskentatehoilla (vuosi 2026) pääsee muutaman kymmenen sijaintipisteen ratkaisuun.
 
 ## Lähteet
 
