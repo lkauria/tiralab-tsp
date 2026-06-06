@@ -38,6 +38,11 @@ def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steel
     plt.show()
 
 
+def circuit_edges(circuit):
+    """Return Eulerian circuit as (i, j) pairs from consecutive nodes."""
+    return [(circuit[k], circuit[k + 1]) for k in range(len(circuit) - 1)]
+
+
 def mst_edges(mst):
     """Return MST edges as (i, j) pairs, each edge only once."""
     edges = []
