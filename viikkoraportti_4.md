@@ -2,20 +2,22 @@
 
 ## Mitä olen tehnyt tällä viikolla?
 
-Olen yrittänyt tehdä matching.py:ssa minimivirityspuusta parittomien solmujen parituksen.
+Olen tehnyt Christofidesin algoritmin vaiheet 1–6/7. Toteutettuna on etäisyysmatriisi, minimivirityspuu (Prim), parittomien solmujen paritus, multigraafi ja Euler-kierros. Algoritmi on siis edennyt vaiheen 6/7 eli Euler-kierroksen loppuun.
 
-Tein myös yksikkötestejä ja yritin miettiä, miten toteuttaisin muuta testausta.
+Olen tehnyt yksikkötestejä ja dokumentaatiota.
 
 ## Miten ohjelma on edistynyt?
 
-Ohjelman vaikeampi osuus on nyt edistynyt hyvin. Testaus ei ole pysynyt mukana, joten sen säästän 5. viikolle.
+Edistynyt kokonaisuudessaan hyvin. Kolmelle viimeiselle vaiheelle (4–6/7) eli multigraafille, Euler-kierrokselle ja paritukselle puuttuvat vielä testit. Teen ne viikolla 5 mahdollisuuksien mukaan.
 
 ## Mitä opin tällä viikolla / tänään?
 
-Opin solmujen paritusalgoritmin toimintalogiikan ja koodauksen.
+Opin solmujen paritusalgoritmin toimintalogiikan ja koodauksen sekä Hierholzerin algoritmin Euler-kierroksen etsimiseen.
 
 ## Mikä jäi epäselväksi tai tuottanut vaikeuksia?
 
-En ole aivan varma, toimiiko matching eli solmujen paritus oikein, mutta yritän tehdä testejä sitä varten. Visuaalisessa toteutuksessa on epäselviä kohtia juuri tämän parituksen osalta.
+Aika ei meinaa riittää testien tekemiseen koodauksen rinnalla. Testit jäävät siksi helposti jälkeen, vaikka koodi itsessään etenee.
 
 ## Mitä teen seuraavaksi?
+
+Teen puuttuvat testit vaiheille 4–6/7 sekä toteutan algoritmin viimeisen osan, Hamiltonin kierroksen.
