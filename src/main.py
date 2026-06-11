@@ -4,6 +4,7 @@ from mst import prim_mst
 from matching import odd_degree_vertices, greedy_matching
 from multigraph import build_multigraph
 from euler import eulerian_circuit
+from hamilton import hamiltonian_circuit
 from visualize import draw, mst_edges, circuit_edges
 
 # Finland's 20 largest cities as (longitude, latitude)
@@ -47,3 +48,6 @@ draw(nodes, edges=mst_edges(mst), highlight_edges=matching, title="MST + paritus
 
 circuit = eulerian_circuit(multigraph)
 draw(nodes, edges=circuit_edges(circuit), title="Euler-kierros")
+
+tour = hamiltonian_circuit(circuit, dist)
+draw(nodes, edges=circuit_edges(tour), title="Hamiltonin kierros")
