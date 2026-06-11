@@ -6,6 +6,7 @@ Christofidesin approksimaatioalgoritmin toteutus kauppamatkustajan ongelmaan (TS
 
 - Python 3.8+
 - matplotlib
+- pyproj
 
 ## Asennus ja käynnistys
 
@@ -19,7 +20,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 
 # Asenna riippuvuudet
-pip install matplotlib pylint
+pip install matplotlib pyproj pylint
 
 # Aja ohjelma
 python src/main.py

@@ -7,28 +7,28 @@ from euler import eulerian_circuit
 from hamilton import hamiltonian_circuit
 from visualize import draw, mst_edges, circuit_edges
 
-# Finland's 20 largest cities as (longitude, latitude)
+# Finland's 20 largest cities in ETRS-TM35FIN (EPSG:3067), unit: meters
 nodes = [
-    (24.94, 60.17),  # 0  Helsinki
-    (24.66, 60.25),  # 1  Espoo
-    (23.77, 61.50),  # 2  Tampere
-    (25.04, 60.29),  # 3  Vantaa
-    (25.47, 65.01),  # 4  Oulu
-    (22.27, 60.45),  # 5  Turku
-    (25.75, 62.24),  # 6  Jyväskylä
-    (25.66, 60.98),  # 7  Lahti
-    (27.68, 62.89),  # 8  Kuopio
-    (21.80, 61.48),  # 9  Pori
-    (26.70, 60.87),  # 10 Kouvola
-    (29.76, 62.60),  # 11 Joensuu
-    (28.19, 61.06),  # 12 Lappeenranta
-    (24.46, 60.99),  # 13 Hämeenlinna
-    (21.61, 63.10),  # 14 Vaasa
-    (22.83, 62.79),  # 15 Seinäjoki
-    (25.73, 66.50),  # 16 Rovaniemi
-    (27.27, 61.69),  # 17 Mikkeli
-    (26.94, 60.47),  # 18 Kotka
-    (23.13, 60.38),  # 19 Salo
+    (385700, 6672127),  # 0  Helsinki
+    (370484, 6681550),  # 1  Espoo
+    (328105, 6822741),  # 2  Tampere
+    (391645, 6685318),  # 3  Vantaa
+    (427883, 7210442),  # 4  Oulu
+    (239915, 6710875),  # 5  Turku
+    (435047, 6901544),  # 6  Jyväskylä
+    (427483, 6761301),  # 7  Lahti
+    (534573, 6973516),  # 8  Kuopio
+    (223215, 6827301),  # 9  Pori
+    (483708, 6748345),  # 10 Kouvola
+    (641679, 6944054),  # 11 Joensuu
+    (564238, 6770054),  # 12 Lappeenranta
+    (362603, 6764338),  # 13 Hämeenlinna
+    (228154, 7008146),  # 14 Vaasa
+    (287372, 6969078),  # 15 Seinäjoki
+    (443493, 7376218),  # 16 Rovaniemi
+    (514285, 6839676),  # 17 Mikkeli
+    (496701, 6703757),  # 18 Kotka
+    (286704, 6699998),  # 19 Salo
 ]
 
 dist = build_distance_matrix(nodes)
