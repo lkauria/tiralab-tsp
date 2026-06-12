@@ -16,15 +16,4 @@ def build_distance_matrix(nodes):
         for j in range(n):
             if i != j:
                 dist[i][j] = euclidean_distance(nodes[i], nodes[j])
-    _print_distance_matrix(dist, n)
     return dist
-
-
-def _print_distance_matrix(dist, n):
-    # For testing purposes (delete this later)
-    print("Etäisyysmatriisi:")
-    header = "     " + "  ".join(f"{j:5}" for j in range(n))
-    print(header)
-    for i in range(n):
-        row = "  ".join(f"{dist[i][j]:5.1f}" for j in range(n))
-        print(f"{i:3}  {row}")
