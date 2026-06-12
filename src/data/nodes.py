@@ -1,5 +1,6 @@
 """Test datasets for Christofides algorithm."""
-# Datasets are created with Claude 3.5. by asking largest cities in Finland and USA, and then converting their lat/lon coordinates with pyproj.
+# Datasets are created with Claude 3.5 by asking largest cities in Finland and USA,
+# and then converting their lat/lon coordinates with pyproj.
 
 # Change this to switch dataset: "finland", "usa" or "own", if you add your own dataset below
 DATASET = "finland"

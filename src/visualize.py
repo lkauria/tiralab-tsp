@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 TOTAL_STEPS = 5
 
 
-def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray", crs=None, step=None, done=False, last=False):
+def draw(nodes, edges=None, highlight_edges=None, title="TSP",
+         node_color="steelblue", edge_color="gray", crs=None,
+         step=None, done=False, last=False):
     """
     Draw nodes and optional edges.
 

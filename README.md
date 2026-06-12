@@ -37,7 +37,7 @@ DATASET = "own"      # your own dataset
 
 ### Oman datasettin lisääminen
 
-Koordinaatit täytyy olla valmiiksi muunnettu — ohjelma ei tee koordinaattimuunnoksia. Lisää pisteet `nodes_own`-listaan `src/data/nodes.py`:ssä `(x, y)` -tuplina:
+Koordinaatit täytyy olla valmiiksi muunnettu — ohjelma ei tee koordinaattimuunnoksia. Lisää pisteet `nodes_own`-listaan `src/data/nodes.py`:ssä `(x, y)` -koordinaatteina:
 
 ```python
 nodes_own = [
