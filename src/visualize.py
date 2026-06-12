@@ -2,17 +2,21 @@
 import matplotlib.pyplot as plt
 
 
-def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray"):
+def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray", crs=None):
     """
     Draw nodes and optional edges.
 
     nodes: list of (x, y) tuples
     edges: list of (i, j) index pairs to draw as lines
     highlight_edges: list of (i, j) pairs drawn in red (e.g. matching edges)
+    crs: coordinate system label shown in the bottom-left corner in EPSG format (e.g. "EPSG:3067")
     """
     _, ax = plt.subplots(figsize=(7, 7))
     ax.set_title(title)
     ax.set_aspect("equal")
+
+    if crs:
+        ax.annotate(crs, xy=(0.01, 0.01), xycoords="axes fraction", fontsize=8, color="gray")
 
     if edges:
         for i, j in edges:
@@ -28,7 +32,7 @@ def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steel
 
     xs = [n[0] for n in nodes]
     ys = [n[1] for n in nodes]
-    ax.scatter(xs, ys, color=node_color, s=80, zorder=2)
+    ax.scatter(xs, ys, color=node_color, s=40, zorder=2)
 
     for i, (x, y) in enumerate(nodes):
         ax.annotate(str(i), (x, y), textcoords="offset points",
