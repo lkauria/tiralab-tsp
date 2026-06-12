@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 TOTAL_STEPS = 5
 
 
-def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray", crs=None, step=None, done=False):
+def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray", crs=None, step=None, done=False, last=False):
     """
     Draw nodes and optional edges.
 
@@ -53,7 +53,11 @@ def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steel
                     xytext=(6, 6), fontsize=9)
 
     plt.tight_layout()
-    plt.show()
+    if last:
+        plt.show()
+    else:
+        plt.pause(2)
+        plt.close()
 
 
 def circuit_edges(circuit):

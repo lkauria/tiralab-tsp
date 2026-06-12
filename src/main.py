@@ -27,4 +27,4 @@ draw(nodes, edges=circuit_edges(circuit), crs=CRS, title="Euler-kierros", step=4
 
 tour = hamiltonian_circuit(circuit, dist)
 draw(nodes, edges=circuit_edges(tour), crs=CRS, title="Hamiltonin kierros", step=5)
-draw(nodes, edges=circuit_edges(tour), crs=CRS, title="Hamiltonin kierros", done=True)
+draw(nodes, edges=circuit_edges(tour), crs=CRS, title="Hamiltonin kierros", done=True, last=True)
