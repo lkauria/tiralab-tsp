@@ -2,7 +2,10 @@
 import matplotlib.pyplot as plt
 
 
-def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray", crs=None):
+TOTAL_STEPS = 5
+
+
+def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steelblue", edge_color="gray", crs=None, step=None, completed=False):
     """
     Draw nodes and optional edges.
 
@@ -10,13 +13,25 @@ def draw(nodes, edges=None, highlight_edges=None, title="TSP", node_color="steel
     edges: list of (i, j) index pairs to draw as lines
     highlight_edges: list of (i, j) pairs drawn in red (e.g. matching edges)
     crs: coordinate system label shown in the bottom-left corner in EPSG format (e.g. "EPSG:3067")
+    step: current step number shown next to the title (e.g. 2 shows "Minimivirityspuu (MST)  2/5")
+    completed: if True, shows "Algoritmi suoritettu!" on the plot
     """
-    _, ax = plt.subplots(figsize=(7, 7))
-    ax.set_title(title)
+    fig, ax = plt.subplots(figsize=(7, 7))
     ax.set_aspect("equal")
+
+    fig.suptitle("Christofidesin algoritmi", fontsize=13, fontweight="bold")
+
+    if step is not None:
+        ax.set_title(f"{title}  {step}/{TOTAL_STEPS}", fontsize=11)
+    else:
+        ax.set_title(title)
 
     if crs:
         ax.annotate(crs, xy=(0.01, 0.01), xycoords="axes fraction", fontsize=8, color="gray")
+
+    if completed:
+        ax.annotate("Algoritmi suoritettu!", xy=(0.5, 0.97), xycoords="axes fraction",
+                    fontsize=11, color="green", ha="center", va="top", fontweight="bold")
 
     if edges:
         for i, j in edges:

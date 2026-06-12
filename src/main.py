@@ -18,13 +18,12 @@ print("Paritus:", matching)
 
 multigraph = build_multigraph(mst, matching, dist)
 
-draw(nodes, crs=CRS, title="Solmut")
-draw(nodes, edges=mst_edges(mst), crs=CRS, title="Minimivirityspuu (MST)")
-draw(nodes, edges=mst_edges(mst), highlight_edges=matching, crs=CRS, title="MST + paritus")
-
+draw(nodes, crs=CRS, title="Syöte", step=1)
+draw(nodes, edges=mst_edges(mst), crs=CRS, title="Minimivirityspuu (MST)", step=2)
+draw(nodes, edges=mst_edges(mst), highlight_edges=matching, crs=CRS, title="MST + paritus", step=3)
 
 circuit = eulerian_circuit(multigraph)
-draw(nodes, edges=circuit_edges(circuit), crs=CRS, title="Euler-kierros")
+draw(nodes, edges=circuit_edges(circuit), crs=CRS, title="Euler-kierros", step=4)
 
 tour = hamiltonian_circuit(circuit, dist)
-draw(nodes, edges=circuit_edges(tour), crs=CRS, title="Hamiltonin kierros")
+draw(nodes, edges=circuit_edges(tour), crs=CRS, title="Hamiltonin kierros", step=5, completed=True)
