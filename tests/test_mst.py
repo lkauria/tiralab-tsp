@@ -3,7 +3,7 @@ import os
 import unittest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../src"))
-from mst import prim_mst
+from algorithm.mst import prim_mst
 
 
 class TestPrimMst(unittest.TestCase):

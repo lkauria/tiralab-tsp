@@ -1,10 +1,10 @@
 """Christofides approximation algorithm"""
-from graph import build_distance_matrix
-from mst import prim_mst
-from matching import odd_degree_vertices, greedy_matching
-from multigraph import build_multigraph
-from euler import eulerian_circuit
-from hamilton import hamiltonian_circuit
+from algorithm.graph import build_distance_matrix
+from algorithm.mst import prim_mst
+from algorithm.matching import odd_degree_vertices, greedy_matching
+from algorithm.multigraph import build_multigraph
+from algorithm.euler import eulerian_circuit
+from algorithm.hamilton import hamiltonian_circuit
 from visualize import draw, mst_edges, circuit_edges
 from data.nodes import nodes, CRS
 

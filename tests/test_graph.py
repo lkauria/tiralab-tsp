@@ -1,10 +1,9 @@
 import sys
 import os
-import math
 import unittest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../src"))
-from graph import euclidean_distance, build_distance_matrix
+from algorithm.graph import euclidean_distance, build_distance_matrix
 
 
 class TestEuclideanDistance(unittest.TestCase):
