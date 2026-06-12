@@ -16,7 +16,7 @@ Algoritmi itsessään on valmis.
 
 Puolet testeistä vielä puuttuu, jos puhutaan yksikkötesteistä. Palautteessa kuitenkin kannustettiin end-to-end -testejä, joten yritän miettiä myös niitä. Sen lisäksi testeihin suositeltiin reunatapausten käsittelyä, esim. 1-2 solmua.
 
-Dokumentaatiossa readme.md on hyvässä vaiheessa. Toteutusdokumentaatio päivitettävä ensi viikolla.
+Dokumentaatiossa readme.md on hyvässä vaiheessa. Toteutusdokumentaatiota päivitetty.
 
 ## Mitä opin tällä viikolla / tänään?
 
@@ -28,9 +28,9 @@ Paljon aikaa meni koordinaattien tekoon pyprojilla ja loppukäyttäjätestauksee
 
 ## Mikä jäi epäselväksi tai tuottanut vaikeuksia?
 
-Vertaisarvioinnin tekeminen vei huomattavasti odotettua enemmän aikaa. Nyt kiire tehdä muuta valmiiksi. En ole varma, ehdinkö ottamaan kunnolla minun saamani vertaisarvion huomioon, jos saan sen vasta la. Minun on tehtävä ma-to koko loppu työ valmiiksi eli viikolla 6.
+Vertaisarvioinnin tekeminen vei huomattavasti odotettua enemmän aikaa.
 
-Vaikeuksia tuottaa edelleen ajankäyttö testien suhteen, koska aikaa menee jo 15 tuntia viikossa muuhun. Testejä pitäisi mahdollisesti priorisoida esim. käyttäjäkokemuksen sijaan.
+Vaikeuksia tuottaa edelleen ajankäyttö testien suhteen, koska aikaa menee jo 15 tuntia viikossa muuhun. Testejä pitäisi mahdollisesti priorisoida esim. käyttäjäkokemuksen sijaan, mutta siihen jää helposti kiinni.
 
 ## Mitä teen seuraavaksi?
 
