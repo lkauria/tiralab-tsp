@@ -2,16 +2,25 @@
 
 ### Ohjelman yleisrakenne
 
-Ohjelma toteuttaa Christofidesin approksimaatioalgoritmin kauppamatkustajan ongelmaan (TSP). Koodi on jaettu tiedostoihin tehtävän mukaan:
+Ohjelma toteuttaa Christofidesin approksimaatioalgoritmin kauppamatkustajan ongelmaan (TSP). Ohjelma on jaettu tiedostoihin tehtävän mukaan:
 
-- `graph.py` — laskee etäisyydet solmujen välille etäisyysmatriisiksi
-- `mst.py` — rakentaa minimivirityspuun listamuotoon (MST)
-- `matching.py` — parittaa parittomien solmujen joukon (tätä vielä hiottava)
-- `multigraph.py` — yhdistää MST:n ja parituksen yhteen multigraafiin
-- `euler.py` — luo Euler-kierroksen (kesken)
-- (Tähän tulee vielä Hamilton)
-- `visualize.py` — piirtää havainnoillistavat kuvat
-- `main.py` — kutsuu yllä olevia tiedostoja järjestyksessä
+src/algorithm/
+
+- `graph.py`: laskee etäisyydet solmujen välille etäisyysmatriisiksi
+- `mst.py`: rakentaa minimivirityspuun listamuotoon (MST)
+- `matching.py`: parittaa parittomien solmujen joukon
+- `multigraph.py`: yhdistää MST:n ja parituksen yhteen multigraafiin
+- `euler.py`: luo Euler-kierroksen
+- `hamilton.py`: muodostaa Hamiltonin kierroksen
+
+src/
+
+- `visualize.py`: piirtää havainnoillistavat kuvat
+- `main.py`: kutsuu yllä olevia tiedostoja järjestyksessä
+
+tests/
+
+- noudattavat algoritmien tiedostonimiä
 
 ---
 
@@ -19,7 +28,7 @@ Ohjelma toteuttaa Christofidesin approksimaatioalgoritmin kauppamatkustajan onge
 
 **0. Etäisyysmatriisi**
 
-Lasketaan kaikkien solmujen väliset etäisyydet euklidisella kaavalla. Tulos on n×n-matriisi.
+Lasketaan kaikkien solmujen väliset etäisyydet euklidisella kaavalla. Tulos on n x n -matriisi.
 
 **1. Minimivirityspuu (MST)**
 
@@ -27,21 +36,23 @@ Käytetään Primin algoritmia. Se rakentaa puun käymällä solmuja läpi yksi 
 
 **2. Parittomat solmut**
 
-Katsotaan mitkä solmut ovat yhteydessä parittomaan määrään muita solmuja (yritä selittää yksinkertaisemmin). Näitä solmuja täytyy olla aina parillinen määrä (matemaattinen fakta).
+Katsotaan mitkä solmut ovat yhteydessä parittomaan määrään muita solmuja. Näitä solmuja täytyy olla aina parillinen määrä (matemaattinen fakta).
 
 **3. Täydellinen paritus (matching)**
 
-Paritetaan parittomien solmujen joukko. Käytetään ahnetta algoritmia: valitaan toistuvasti lähimpien parittomien solmujen pari. Ei ole optimaalinen, mutta riittävä approksimaatioon.
+Paritetaan parittomien solmujen joukko. Käytetään ahnetta algoritmia: valitaan toistuvasti lähimpien parittomien solmujen pari. Tulos ei ole optimaalinen, mutta riittävä approksimaatioon.
 
 **4. Multigraafi**
 
-Yhdistetään MST:n kaaret ja parituskaaret. Sama kaari voi esiintyä kahdesti. Tämä takaa, että jokaisen solmun aste on parillinen — Euler-kierroksen edellytys.
+Yhdistetään MST:n kaaret ja parituskaaret. Sama kaari voi esiintyä kahdesti. Tämä takaa, että jokaisen solmun aste on parillinen, mikä on Euler-kierroksen edellytys.
 
 **5. Euler-kierros**
 
-kesken
+Käytetään Hierholzerin algoritmia. Se kulkee multigraafin kaaret läpi niin, että jokainen kaari käydään tarkalleen kerran. Tuloksena on lista solmuista järjestyksessä.
 
-**6. Hamiltonin kierros** _(tulossa)_
+**6. Hamiltonin kierros**
+
+Käydään Euler-kierros läpi ja jätetään pois solmut, jotka on jo vierailtu. Tuloksena on lyhyempi reitti, joka käy jokaisessa solmussa kerran.
 
 ---
 
@@ -55,6 +66,7 @@ kesken
 | Ahne paritus               | O(n²)         |
 | Multigraafin rakentaminen  | O(n)          |
 | Euler-kierros (Hierholzer) | O(n)          |
+| Hamiltonin kierros         | O(n)          |
 
 Koko algoritmin aikavaativuus on O(n²), koska etäisyysmatriisi ja Primin algoritmi dominoivat.
 
@@ -64,15 +76,16 @@ Tilavaativuus on O(n²) etäisyysmatriisin takia.
 
 ### Puutteet ja parannusehdotukset
 
-- Ahne paritus ei ole optimaalinen. Täydellinen paritus (esim. Edmond's blossom -algoritmi) antaisi paremman tuloksen, mutta on huomattavasti monimutkaisempi.
+- Ahne paritus ei ole optimaalinen. Täydellinen paritus (esim. Edmondsin blossom -algoritmi) antaisi paremman tuloksen, mutta on monimutkaisempi toteuttaa.
 - Primin algoritmin voisi nopeuttaa kekoon perustuvaksi O(n log n) -ratkaisuksi.
-- Eurer ja Hamilton toteuttamatta
 
 ---
 
 ### Tekoälyn käyttö
 
-Työssä on käytetty Claude-kielimallia (Anthropic) koodin synnyttämisessä, parantamisessa ja debuggaamisessa. Vaikka koodi on kirjoitettu itse, suuri osa Christofidesin toteutuksesta pohjaa hyvin pitkälle tekoälyn antamiin ratkaisuehdotuksiin, kun omia ratkaisuja on lähdetty hiomaan. Malli on myös erityisesti auttanut visualisoinnissa ja algoritmien rakenteen selittämisessä. Kaikki koodi on kuitenkin kirjoitettu ja ymmärretty itse, vaikka tekoäly sitä on ehdottanutkin.
+Työssä on käytetty Claude-kielimallia (Anthropic) koodin kirjoittamisessa, parantamisessa ja debuggaamisessa. Vaikka koodi on kirjoitettu itse, suuri osa Christofidesin toteutuksesta pohjaa tekoälyn antamiin ratkaisuehdotuksiin, joita on lähdetty hiomaan. Malli on myös auttanut visualisoinnissa ja algoritmien rakenteen selittämisessä. Kaikki koodi on kuitenkin kirjoitettu ja ymmärretty itse, vaikka tekoäly olisi sitä on ehdottanutkin.
+
+Testidata on luotu Claudella.
 
 ---
 
