@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 
 TOTAL_STEPS = 5
+MANUAL = False  # set True to step through images manually by closing each window
 
 
 def draw(nodes, edges=None, highlight_edges=None, title="TSP",
@@ -55,7 +56,7 @@ def draw(nodes, edges=None, highlight_edges=None, title="TSP",
                     xytext=(6, 6), fontsize=9)
 
     plt.tight_layout()
-    if last:
+    if last or MANUAL:
         plt.show()
     else:
         plt.pause(2)
