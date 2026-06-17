@@ -37,7 +37,7 @@ DATASET = "own"      # your own dataset
 
 ### Oman datasettin lisääminen
 
-Koordinaatit täytyy olla valmiiksi muunnettu — ohjelma ei tee koordinaattimuunnoksia. Lisää pisteet `nodes_own`-listaan `src/data/nodes.py`:ssä `(x, y)` -koordinaatteina:
+Koordinaatit täytyy olla valmiiksi muunnettu, ohjelma ei tee koordinaattimuunnoksia. Lisää pisteet `nodes_own`-listaan `src/data/nodes.py`:ssä `(x, y)` -koordinaatteina:
 
 ```python
 nodes_own = [
@@ -56,6 +56,16 @@ if DATASET == "own":
 ```
 
 Jos koordinaatisto ei ole tiedossa, aseta `CRS = None`.
+
+## Visualisointi
+
+Ohjelma näyttää algoritmin vaiheet automaattisesti, yksi kuva kerrallaan. Jos haluat tarkastella jokaista kuvaa rauhassa, aseta `src/visualize.py`:ssä:
+
+```python
+MANUAL = True
+```
+
+Tällöin jokainen kuva jää auki, kunnes suljet ikkunan itse.
 
 ## Testien ajo
 
