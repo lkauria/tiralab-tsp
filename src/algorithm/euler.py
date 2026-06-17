@@ -7,10 +7,13 @@ def eulerian_circuit(multigraph):
     Find an Eulerian circuit in the multigraph (usinng Hierholzer's algorithm).
     Returns a list of node indices representing the circuit.
     """
+    if not multigraph:
+        return []
+
     # deep copy so we can remove edges as we traverse without changing the original
     graph = copy.deepcopy(multigraph)
 
-    # stack keeps track of where we currently are — start from node 0
+    # stack keeps track of where we currently are, start from node 0
     stack = [0]
     # circuit will hold the final order of visited nodes
     circuit = []
