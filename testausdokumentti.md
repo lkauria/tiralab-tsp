@@ -2,7 +2,7 @@
 
 ## Yksikkötestauksen kattavuusraportti
 
-Testit kattavat 5 algoritmimoduulia yhteensä 17 testillä.
+Testit kattavat 6 algoritmimoduulia yhteensä 20 testillä.
 
 | Tiedosto            | Testejä | Testattu                                      |
 | ------------------- | ------- | --------------------------------------------- |
@@ -11,7 +11,7 @@ Testit kattavat 5 algoritmimoduulia yhteensä 17 testillä.
 | `test_matching.py`  | 6       | `odd_degree_vertices`, `greedy_matching`      |
 | `test_multigraph.py`| 2       | `build_multigraph`                            |
 | `test_euler.py`     | 4       | `eulerian_circuit`                            |
-| `test_hamilton.py`  | 0       | `hamiltonian_circuit`                         |
+| `test_hamilton.py`  | 3       | `hamiltonian_circuit`                         |
 
 `visualize.py` ja `main.py` eivät ole yksikkötestattu.
 
