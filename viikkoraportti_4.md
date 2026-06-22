@@ -21,3 +21,7 @@ Aika ei meinaa riittää testien tekemiseen koodauksen rinnalla. Testit jäävä
 ## Mitä teen seuraavaksi?
 
 Teen puuttuvat testit vaiheille 4–6/7 sekä toteutan algoritmin viimeisen osan, Hamiltonin kierroksen.
+
+## Käytetty aika
+
+20 tuntia

@@ -35,3 +35,7 @@ Vaikeuksia tuottaa edelleen ajankäyttö testien suhteen, koska aikaa menee jo 1
 ## Mitä teen seuraavaksi?
 
 Testien ja dokumentaation täydentäminen. Vertaisarvioinnin huomioiminen testien tekemiseen liittyen.
+
+## Käytetty aika
+
+17 tuntia

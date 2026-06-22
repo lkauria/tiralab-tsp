@@ -23,3 +23,6 @@ Tunnen algoritmin vielä vain tähän vaiheeseen.
 ## Mitä teen seuraavaksi?
 
 Seuraavaksi alan tekemään testejä koodiin ja tutustumaan algoritmin seuraaviin osiin.
+
+## Käytetty aika
+15 tuntia

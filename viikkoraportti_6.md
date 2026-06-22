@@ -19,3 +19,19 @@ Testien tekeminen on hidasta. Myös aiempaan koodiin palaaminen jo vain 1 kk alo
 ## Mitä teen seuraavaksi?
 
 Dokumentaation loppuunvieminen ja seuraavan tason testien teko. Nyt vain yksikkötestejä.
+
+## Käytetty aika
+
+19 tuntia
+
+## Tuntiseuranta
+
+| Viikko | Tuntia |
+| ------ | ------ |
+| 1      | 10     |
+| 2      | 15     |
+| 3      | 16     |
+| 4      | 20     |
+| 5      | 17     |
+| 6      | 19     |
+| Yht.   | 97     |

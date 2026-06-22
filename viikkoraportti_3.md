@@ -19,3 +19,7 @@ Testien kirjoittamisen rutiini puuttuu ja niiden aloittamisen kitka on suuri.
 ## Mitä teen seuraavaksi?
 
 Jatkan 3. ja 4. viikon tavoitelistan kanssa. Ensin testit, jonka jälkeen algoritmin seuraavat toiminnallisuudet.
+
+## Käytetty aika
+
+16 tuntia
