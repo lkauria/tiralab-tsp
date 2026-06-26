@@ -16,6 +16,9 @@ def hamiltonian_circuit(circuit, dist):
             # first time seeing this node, add it to the tour
             visited.add(node)
             tour.append(node)
+            print(f"  Lisätään solmu {node} kierrokseen")
+        else:
+            print(f"  Ohitetaan solmu {node} (jo vierailtu)")
 
     # close the tour by returning to the starting node
     tour.append(tour[0])

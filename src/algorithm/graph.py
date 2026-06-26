@@ -16,4 +16,5 @@ def build_distance_matrix(nodes):
         for j in range(n):
             if i != j:
                 dist[i][j] = euclidean_distance(nodes[i], nodes[j])
+    print(f"Etäisyysmatriisi valmis ({n}x{n}). Esimerkki: solmu 0 -> solmu 1: {dist[0][1]:.1f}")
     return dist

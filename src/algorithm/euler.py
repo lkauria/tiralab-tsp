@@ -30,9 +30,11 @@ def eulerian_circuit(multigraph):
             graph[u].remove((v, _))
             # move to node u by pushing it onto the stack
             stack.append(u)
+            print(f"  Siirrytään: {v} -> {u},  pino: {stack}")
         else:
-            # node v has no more edges — it is done, add it to the circuit
+            # node v has no more edges, it is done, add it to the circuit
             circuit.append(stack.pop())
+            print(f"  Solmu {v} valmis, lisätään kierrokseen, kierros tähän asti: {circuit}")
 
     print("\nEuler-kierros:", circuit)
     return circuit
