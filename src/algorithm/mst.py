@@ -53,7 +53,7 @@ def _pick_min(cost, in_tree, n):
         if not in_tree[i]:
             # accept the first candidate unconditionally, then keep the cheaper one
             if best == -1 or cost[i] < cost[best]:
-                print(f"  solmu {i} on halvempi (hinta: {cost[i]:.1f}) kuin aiempi paras solmu {best}")
+                print(f"  solmu {i} halvempi (hinta: {cost[i]:.1f}), aiempi paras: solmu {best}")
                 best = i
     print(f"  valitaan solmu {best} puuhun")
     return best

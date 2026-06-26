@@ -4,7 +4,7 @@ import copy
 
 def eulerian_circuit(multigraph):
     """
-    Find an Eulerian circuit in the multigraph (usinng Hierholzer's algorithm).
+    Find an Eulerian circuit in the multigraph (using Hierholzer's algorithm).
     Returns a list of node indices representing the circuit.
     """
     if not multigraph:

@@ -19,7 +19,7 @@ def greedy_matching(odd_vertices, dist):
     unmatched = list(odd_vertices)
     matching = []
 
-    while unmatched:
+    while len(unmatched) >= 2:
         # pick the first unmatched node
         u = unmatched.pop(0)
         # find the closest node to u among the remaining unmatched nodes
