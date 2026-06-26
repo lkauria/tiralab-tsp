@@ -32,5 +32,9 @@ class TestPrimMst(unittest.TestCase):
         self.assertNotIn(1, neighbors_of_node_0)
 
 
+    def test_empty_graph(self):
+        self.assertEqual(prim_mst([]), [])
+
+
 if __name__ == "__main__":
     unittest.main()
